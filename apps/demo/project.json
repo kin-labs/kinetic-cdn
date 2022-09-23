@@ -13,11 +13,12 @@
         "compiler": "babel",
         "main": "apps/demo/src/main.ts",
         "tsConfig": "apps/demo/tsconfig.app.json",
-        "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
+        "assets": [],
         "index": "apps/demo/src/index.html",
         "baseHref": "/",
         "polyfills": "apps/demo/src/polyfills.ts",
-        "styles": ["apps/demo/src/styles.css"],
+        "styles": [],
+        "verbose": true,
         "scripts": [],
         "webpackConfig": "apps/demo/webpack.config.js"
       },
@@ -26,8 +27,8 @@
           "optimization": true,
           "outputHashing": "all",
           "sourceMap": false,
-          "namedChunks": false,
-          "extractLicenses": true,
+          "namedChunks": true,
+          "extractLicenses": false,
           "vendorChunk": false,
           "fileReplacements": [
             {

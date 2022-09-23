@@ -7,15 +7,12 @@ window.onload = () => {
   (window as any).global = window;
   (window as any).global.Buffer = Buffer;
 
-  window['KineticSdk'] = KineticSdk;
-  window['Keypair'] = Keypair;
-
-  console.log(`const owner = Keypair.random();`);
-  console.log(`const sdk = await KineticSdk.setup({
-      endpoint: 'https://sandbox.kinetic.host',
-      environment: 'devnet',
-      index: 1,
-      logger: console,
-    });`);
-  console.log(`const accountTx = await sdk.createAccount({ owner }) `);
+  document.dispatchEvent(
+    new CustomEvent('kinetic-sdk-ready', {
+      detail: {
+        Keypair,
+        KineticSdk,
+      },
+    })
+  );
 };

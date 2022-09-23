@@ -13,5 +13,43 @@
   </head>
   <body>
     <kinetic-cdn-root></kinetic-cdn-root>
+    <script>
+      function getKeypair(Keypair) {
+        const publicKey = localStorage.getItem('publicKey');
+        if (!publicKey) {
+          const keypair = Keypair.random();
+          console.log(
+            'No public key found, generating a new one',
+            keypair.publicKey
+          );
+          localStorage.setItem('publicKey', keypair.publicKey);
+          localStorage.setItem(keypair.publicKey, keypair.mnemonic);
+        }
+        return Keypair.fromMnemonic(localStorage.getItem(publicKey));
+      }
+      function setupKeypair(Keypair) {
+        window['owner'] = getKeypair(Keypair);
+      }
+
+      function setupSdk(KineticSdk) {
+        KineticSdk.setup({
+          endpoint: 'https://sandbox.kinetic.host',
+          environment: 'devnet',
+          index: 1,
+          logger: console,
+        }).then((sdk) => {
+          window['sdk'] = sdk;
+        });
+      }
+
+      document.addEventListener(
+        'kinetic-sdk-ready',
+        ({ detail: { Keypair, KineticSdk } }) => {
+          console.log('Kinetic SDK is ready!', Keypair, KineticSdk);
+          setupKeypair(Keypair);
+          setupSdk(KineticSdk);
+        }
+      );
+    </script>
   </body>
 </html>

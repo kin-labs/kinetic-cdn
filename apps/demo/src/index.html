@@ -15,9 +15,10 @@
     <kinetic-cdn-root></kinetic-cdn-root>
     <script>
       function getKeypair(Keypair) {
-        const publicKey = localStorage.getItem('publicKey');
+        let publicKey = localStorage.getItem('publicKey');
         if (!publicKey) {
           const keypair = Keypair.random();
+          publicKey = keypair.publicKey;
           console.log(
             'No public key found, generating a new one',
             keypair.publicKey

@@ -7,7 +7,9 @@
     "build:demo": "nx build demo",
     "dev:demo": "nx serve demo",
     "start": "nx serve",
-    "test": "nx test"
+    "test": "nx test",
+    "publish-build": "cd kinetic-cdn-build && npm run publish-build",
+    "update": "yarn add @kin-kinetic/sdk @kin-kinetic/keypair @kin-kinetic/solana  && yarn build:demo && ./create-bundle.sh"
   },
   "private": true,
   "devDependencies": {
@@ -47,9 +49,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@kin-kinetic/keypair": "^1.0.0-rc.8",
-    "@kin-kinetic/sdk": "^1.0.0-rc.8",
-    "@kin-kinetic/solana": "^1.0.0-rc.8",
+    "@kin-kinetic/keypair": "^1.0.0-rc.9",
+    "@kin-kinetic/sdk": "^1.0.0-rc.9",
+    "@kin-kinetic/solana": "^1.0.0-rc.9",
     "@swc/helpers": "~0.3.3",
     "core-js": "^3.6.5",
     "regenerator-runtime": "0.13.7",

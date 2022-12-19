@@ -1383,40 +1383,45 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kin-kinetic/keypair@1.0.0-rc.10", "@kin-kinetic/keypair@^1.0.0-rc.10":
-  version "1.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@kin-kinetic/keypair/-/keypair-1.0.0-rc.10.tgz#a92af2825bf2f0d0b85c0b360a1b1c1e2b35bd48"
-  integrity sha512-1OFc3ATS+56YHmN53RPSJqNxle4LVUFsYVoRD9uika98ZWXVLO/buP7Lj9Oi7xTMlJhcmW/dlP/W8bMYizcjlg==
+"@kin-kinetic/keypair@1.0.0-rc.11", "@kin-kinetic/keypair@^1.0.0-rc.11":
+  version "1.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/@kin-kinetic/keypair/-/keypair-1.0.0-rc.11.tgz#ee296cb6290a0ab142e709f44732cd15df573042"
+  integrity sha512-CWIDEJa9DRqPdbaSD5SZobC/MbwjEprSarEQTKGSD/fBVxl2bHIWsarrweAyumMjCdLK5CTBHtSWRvoBSdjWRA==
   dependencies:
     "@scure/bip39" "1.1.0"
-    "@solana/web3.js" "1.66.2"
+    "@solana/web3.js" "1.70.1"
     bs58 "4.0.1"
     buffer "6.0.1"
     micro-ed25519-hdkey "0.1.2"
     tslib "2.4.0"
     util "0.12.5"
 
-"@kin-kinetic/sdk@^1.0.0-rc.10":
-  version "1.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@kin-kinetic/sdk/-/sdk-1.0.0-rc.10.tgz#49f342c6bd6d19a34f3c92fcd2d20fad91ace8b7"
-  integrity sha512-o/Dual6MYf//KEEbfYPyb1cTkXWx7uBN02A/MflCte2ZwijQHiiMjmYjzuE+xmK/jVInahlBq0Q6IbLDkZ5DLA==
+"@kin-kinetic/sdk@^1.0.0-rc.11":
+  version "1.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/@kin-kinetic/sdk/-/sdk-1.0.0-rc.11.tgz#3e239ee20faf526686a9e7d0ab829029856e3e59"
+  integrity sha512-6kI4TkEXeGf/U/jo4pAzzipe35LGDBFfH9G6q3qNcVUrgoD0P6S5RthSEoXZJRaIoRlZcHH4JM14mc6BXcu5xA==
   dependencies:
-    "@kin-kinetic/keypair" "1.0.0-rc.10"
-    "@kin-kinetic/solana" "1.0.0-rc.10"
-    "@solana/web3.js" "1.66.2"
-    axios "0.26.1"
+    "@kin-kinetic/keypair" "1.0.0-rc.11"
+    "@kin-kinetic/solana" "1.0.0-rc.11"
+    "@scure/bip39" "1.1.0"
+    "@solana/spl-token" "0.3.6"
+    "@solana/web3.js" "1.70.1"
+    axios "0.27.2"
     bignumber.js "9.0.2"
+    bs58 "4.0.1"
     buffer "6.0.1"
+    micro-ed25519-hdkey "0.1.2"
     tslib "2.4.0"
+    util "0.12.5"
 
-"@kin-kinetic/solana@1.0.0-rc.10", "@kin-kinetic/solana@^1.0.0-rc.10":
-  version "1.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@kin-kinetic/solana/-/solana-1.0.0-rc.10.tgz#dd34e521d000231e71be281ec71d80b233e3f4d9"
-  integrity sha512-uMS9mM2dGXz2UEq48XWgVrs23vH26JBig2stJBzFmd4ce8yErSpUdslsPDPUZ1nPZQL/hmN0SBI27CEyleaxSA==
+"@kin-kinetic/solana@1.0.0-rc.11", "@kin-kinetic/solana@^1.0.0-rc.11":
+  version "1.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/@kin-kinetic/solana/-/solana-1.0.0-rc.11.tgz#3c3d1c24ba4db3a72353507829623d904061a796"
+  integrity sha512-BeeWjguzgANLPGxfqSOVehFnP6WMryaeiqBujeRaO3j4Qums4x+OpTu0rsDBUC2ub+bAbbioXrNFsFQO1DKJMA==
   dependencies:
     "@solana/spl-token" "0.3.6"
-    "@solana/web3.js" "1.66.2"
-    axios "0.26.1"
+    "@solana/web3.js" "1.70.1"
+    axios "0.27.2"
     bignumber.js "9.0.2"
     tslib "2.4.0"
 
@@ -1858,10 +1863,10 @@
     "@solana/buffer-layout-utils" "^0.2.0"
     buffer "^6.0.3"
 
-"@solana/web3.js@1.66.2":
-  version "1.66.2"
-  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.66.2.tgz#80b43c5868b846124fe3ebac7d3943930c3fa60c"
-  integrity sha512-RyaHMR2jGmaesnYP045VLeBGfR/gAW3cvZHzMFGg7bkO+WOYOYp1nEllf0/la4U4qsYGKCsO9eEevR5fhHiVHg==
+"@solana/web3.js@1.70.1":
+  version "1.70.1"
+  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.70.1.tgz#4a2df47cc32a0f67be5161e772b2ceb6512281fa"
+  integrity sha512-AnaqCF1cJ3w7d0yhvLGAKAcRI+n5o+ursQihhoTe4cUh8/9d4gbT73SoHYElS7e67OtAgLmSfbcC5hcOAgdvnQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@noble/ed25519" "^1.7.0"
@@ -2887,12 +2892,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
-  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+axios@0.27.2:
+  version "0.27.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
   dependencies:
-    follow-redirects "^1.14.8"
+    follow-redirects "^1.14.9"
+    form-data "^4.0.0"
 
 axios@^0.21.1:
   version "0.21.4"
@@ -4740,7 +4746,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.14.8:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.14.9:
   version "1.15.2"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.2.tgz"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==

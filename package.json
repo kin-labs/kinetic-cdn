@@ -49,9 +49,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@kin-kinetic/keypair": "^1.0.0-rc.13",
-    "@kin-kinetic/sdk": "^1.0.0-rc.13",
-    "@kin-kinetic/solana": "^1.0.0-rc.13",
+    "@kin-kinetic/keypair": "^1.0.0-rc.14",
+    "@kin-kinetic/sdk": "^1.0.0-rc.14",
+    "@kin-kinetic/solana": "^1.0.0-rc.14",
     "@swc/helpers": "~0.3.3",
     "core-js": "^3.6.5",
     "regenerator-runtime": "0.13.7",
